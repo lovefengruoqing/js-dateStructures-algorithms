@@ -103,4 +103,4 @@ List.prototype = {
 }
 
 // 将列表类，暴露出去一个接口
-exports.List = new List();
+exports.List = List;
