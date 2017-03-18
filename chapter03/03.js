@@ -15,7 +15,6 @@ function pushPerson(){
 			gender: person.gender
 		})
 	}
-	
 }
 
 pushPerson(["Jay", "men"],["feng", "men"],["ruo", "men"],["qing", "men"],["kang", "men"],["Michael", "men"],["Joey", "women"],["zhang", "women"],["xiaoming", "women"],["xiaohua", "women"])
@@ -28,4 +27,8 @@ function displaySameGender(list, gender){
 	}
 }
 
+console.log('女性有：')
 displaySameGender(list, "women")
+
+console.log('\n男性有：')
+displaySameGender(list, "men")
