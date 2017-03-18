@@ -2,7 +2,7 @@
 
 ### [Queue.js](./Queue.js "点击前往")
 
-构建一个Queue对象，Queue对象包括一些属性和方法。向外暴露一个借口Queue
+构建一个Queue对象，Queue对象包括一些属性和方法。向外暴露一个Queue接口
 
 ### [test.js](./test.js "点击前往")
 
