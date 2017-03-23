@@ -52,12 +52,40 @@ BST.prototype = {
 			this.preOrder(node.right)
 		}
 	},
+	// 后续遍历
 	postOrder: function(node){
 		if(!(node == null)){
 			this.postOrder(node.left)
 			this.postOrder(node.right)
 			console.log(node.show()+' ')
 		}
+	},
+	getMin: function(){
+		var current = this.root
+		while(!(current.left == null)){
+			current = current.left
+		}
+		return current.data
+	},
+	getMax: function(){
+		var current = this.root
+		while(!(current.right == null)){
+			current = current.right
+		}
+		return current.data
+	},
+	find: function(data){
+		var current = this.root
+		while(current != null){
+			if(current.data == data){
+				return current
+			}else if(current.data < data){
+				current = current.right
+			}else{
+				current = current.left
+			}
+		}
+		return null
 	}
 }
 
