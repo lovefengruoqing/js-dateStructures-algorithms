@@ -60,6 +60,7 @@ BST.prototype = {
 			console.log(node.show()+' ')
 		}
 	},
+	// 获得最小值
 	getMin: function(){
 		var current = this.root
 		while(!(current.left == null)){
@@ -67,6 +68,7 @@ BST.prototype = {
 		}
 		return current.data
 	},
+	// 获得最大值
 	getMax: function(){
 		var current = this.root
 		while(!(current.right == null)){
@@ -74,6 +76,7 @@ BST.prototype = {
 		}
 		return current.data
 	},
+	// 查找指定元素
 	find: function(data){
 		var current = this.root
 		while(current != null){
@@ -86,6 +89,37 @@ BST.prototype = {
 			}
 		}
 		return null
+	},
+	// 删除数据
+	remove: function(data){
+		this.removeNode(this.root, data)
+	},
+	// 删除节点
+	removeNode: function(node, data){
+		if(node == null){
+			return null
+		}
+		if(data == node.data){
+			if(node.left ==null && node.right == null){
+				return null;
+			}
+			if(node.left == null){
+				return node.right
+			}
+			if(node.right == null){
+				return node.left
+			}
+			var tempNode = this.getMine(node.right)
+			node.data = tempNode.data
+			node.right = this.removeNode(node.right, tempNode.data)
+			return node
+		}else if(data < node.data){
+			node.left = this.removeNode(node.left, data)
+			return node
+		}else{
+			node.right = this.removeNode(node.right, data)
+			return node
+		}
 	}
 }
 

@@ -27,3 +27,7 @@ console.log("\n最小值：",nums.getMin())
 
 console.log("\n查找99：",nums.find(99))
 console.log("\n查找199：",nums.find(199))
+
+nums.remove(122)
+console.log('\n')
+nums.inOrder(nums.root)

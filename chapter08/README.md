@@ -1,4 +1,4 @@
-## 第七章  散列
+## 第八章  散列
 
 ### [HashTable.js](./HashTable.js "点击前往")
 

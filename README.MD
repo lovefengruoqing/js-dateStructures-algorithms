@@ -148,3 +148,57 @@ jumped: 1
 over: 1
 blue: 1
 并且，使单词按字母顺序显示。
+
+
+### [第八章](./chapter08/ "点击前往")
+
+#### [HashTable.js](./chapter08/HashTable.js "点击前往")
+
+构建了一个散列对象，拥有一些属性和方法，向外暴露一个接口
+
+### [test.js](./chapter08/test.js "点击前往")
+
+测试散列对象
+
+### [betterHash.js](./chapter08/betterHash.js "点击前往")
+
+重写哈希计算方法，采用更好的哈希值计算方法
+
+### [hashStore.js](./chapter08/hashStore.js "点击前往")
+
+采用哈希表来存储电话号码
+
+### [chainTable.js](./chapter08/chainTable.js "点击前往")
+
+采用链式哈希存储方法，避免碰撞
+
+### [lineHash.js](./chapter08/lineHash.js "点击前往")
+
+采用线性哈希存储方法，避免碰撞
+
+
+### [第九章](./chapter09/ "点击前往")
+
+### [set.js](./chapter09/set.js "点击前往")
+
+构建了一个集合对象，拥有一些属性和方法，向外暴露一个接口
+
+### [test.js](./chapter09/test.js "点击前往")
+
+测试集合的基本的属性和方法
+
+### [test-sub.js](./chapter09/test-sub.js "点击前往")
+
+找出哪个集合为哪个集合的子集
+
+### [test-union.js](./chapter09/test-union.js "点击前往")
+
+找出两个集合的并集
+
+### [test-interSect.js](./chapter09/test-interSect.js "点击前往")
+
+找出两个合集的交集
+
+### [test-complement.js](./chapter09/test-complement.js "点击前往")
+
+找出两个集合的差集
